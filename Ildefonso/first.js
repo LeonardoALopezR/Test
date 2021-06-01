@@ -20,7 +20,7 @@
  */
 
 //  Variables
-var startTime = "00:01:00AM";
+var startTime = "10:00:00PM";
 var finishTime = "";
 
 console.log("From :" + startTime);
@@ -43,6 +43,10 @@ function convertir(startTime) {
     // console.log(hora1,hora2);
     hora1 += 1;
     hora2 += 2;
+    if (hora2 == 10 || hora2 == 11) {
+      hora1 += 1;
+      hora2 = hora2 - 10;
+    }
     // console.log(hora1, hora2);
     finishTime=finishTime.concat(hora1, hora2);
     for (i = 2; i < startTime.length-2; i++){
