@@ -18,7 +18,7 @@ class Rectangulo
     }
     area()
     {
-        var total=this.base * this.altura;
+        var total= this.base * this.altura;
         return total;
     } 
 }
@@ -26,3 +26,6 @@ class Rectangulo
 var objeto = new Rectangulo(2,3);
 
  console.log(objeto.area());
+
+ let ejemplo = "Luis";
+ ejemplo.length
